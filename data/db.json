@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "title": "my first blog",
-      "body": "why do we use it??",
-      "author": "ilana",
-      "id": "1"
-    },
-    {
       "title": "Tips for web development",
       "body": "Ships before the",
       "author": "esmee",
@@ -53,6 +47,12 @@
       "author": "john",
       "body": "d",
       "id": "rJ_W9_F"
+    },
+    {
+      "title": " vh",
+      "author": "john",
+      "body": "dhh",
+      "id": "JBb9zAT"
     }
   ]
 }

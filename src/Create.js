@@ -1,42 +1,45 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
-const Create = () => {
+const Create = () => { 
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('john');
     const [body, setBody] = useState('');
     const [isPending, setIsPending] = useState(false);
+    const history = useHistory();
  
     const handleSubmit = (e) => {
         e.preventDefault(); 
         const blog = { title, author, body };
         
         fetch('http://localhost:8000/blogs', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(blog)
+            method: 'POST', 
+            headers: { "Content-Type": "application/json" }, 
+            body: JSON.stringify(blog) // JSON.stringify() converts the object into a string
         }).then(() =>{
-            console.log('Blog created');
-            setIsPending(false);
+            console.log('Blog created'); 
+            setIsPending(false); 
         })
+        history.push('/'); // redirect to the home page
     }
 
     return ( 
         <div>
             <h1>Create a new blog</h1>
             <form onSubmit={handleSubmit}>
-                <label>Blog title</label>
+                <label>Blog title</label> 
                 <input 
                     type="text" 
                     required 
                     value={title}
-                    onChange={(e) => setTitle(e.target.value)}
+                    onChange={(e) => setTitle(e.target.value)} 
                  />
-                <label>Blog content</label>
-                <textarea 
+                <label>Blog content</label> 
+                <textarea  
                     required
                     value={body}
-                    onChange={(e) => setBody(e.target.value)}
-                ></textarea>	
+                    onChange={(e) => setBody(e.target.value)} 
+                ></textarea>	 
                 <label>Blog author:</label>
                 <select
                     value={author}

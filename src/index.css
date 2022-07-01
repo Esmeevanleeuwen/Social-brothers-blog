@@ -24,3 +24,10 @@ body {
   text-decoration: none;
   padding: 10px;
  }
+
+ .blog-preview a{
+  text-decoration: none;
+  color: #000000;
+ }
+
+ 

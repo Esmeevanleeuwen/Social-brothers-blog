@@ -1,0 +1,22 @@
+{
+    "blogs": [
+    {
+        "title": "my first blog",
+        "body": "why do we use it??",
+        "author": "ilana",
+        "id": "1"
+    },
+    {
+        "title": "Tips for web development",
+        "body": "Ships",
+        "author": "esmee",
+        "id": "2"
+    },
+    {
+        "title": "Tips for web development",
+        "body": "Ships",
+        "author": "sravan",
+        "id": "3"
+    }
+  ]
+}

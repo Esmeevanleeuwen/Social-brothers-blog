@@ -14,7 +14,7 @@ const UseFetch = (url) =>{
             }
             return res.json();
           })
-          .then(data =>{    // update the state with the data
+          .then(data =>{     //  update the state with the data
             console.log(data);
             setData(data);
             setError(null);

@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Create from './Create';
@@ -13,7 +14,9 @@ function App() {
             <div className='content'>
               <Switch>
                 <Route exact path="/" >
-                  <Home />
+                  <div>  
+                    <Home />
+                  </div>
                 </Route>
                 <Route exact path="/create" >
                   <Create />

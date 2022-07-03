@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import UseFetch from "./UseFetch";
 import { useHistory } from "react-router-dom";
+import Card from 'react-bootstrap/Card';
+
 
 const BlogDetails = () => {
     const { id } = useParams();
@@ -20,13 +22,15 @@ const BlogDetails = () => {
             { isPending && <div>Loading...</div> }
             { error && <div>{ error }</div> }
             { blog && (
-                <article>
-                    <h1>{ blog.title }</h1>
-                    <p>written by { blog.author }</p>
-                    <div>
-                        { blog.body }
-                    </div>
-                    <button onClick={handleClick}>delete</button>
+                <article className="card-details">
+                    <Card className="card-style">
+                      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+                      <Card.Body>
+                        <h2>{ blog.title}</h2> 
+                        <Card.Text>{ blog.body}</Card.Text>
+                      </Card.Body>
+                    </Card>
+                    <button className="button-create btn-delete" onClick={handleClick}>delete</button>
                 </article>
             )}
         </div>

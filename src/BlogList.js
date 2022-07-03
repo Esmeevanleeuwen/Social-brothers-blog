@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import ShowMore from 'react-show-more-button/dist/module';
 
 const BlogList = ({ blogs, title, body  }) => {
   

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom"; 
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -21,7 +20,7 @@ const BlogList = ({ blogs, title, body  }) => {
         <div className="blog-list">
           <Container className="cards">
           <Row> 
-          	{blogs.slice(0, visible).map((blog) => (
+          	{blogs.slice(0, visible).map((blog) => ( //slice(0, visible) is used to display only 4 blogs at a time
                 <Col md="12" lg="6">
                 <div className='blog-preview' key={ blog.id }>
                   <Link to={`/blogs/${blog.id}`}> 

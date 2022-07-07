@@ -104,6 +104,22 @@ body {
   margin-top: 100px !important;
 }
 
+.button-loads{
+  background-color: #EC7528;
+  border: none;
+  color: white; 
+  padding: 10px 32px;
+  width: 240px;
+  border-radius: 30px; 
+  margin: 10px 0 25px 170px;
+
+}
+ 
+a{
+  text-decoration: none;
+  color: #000000 !important;
+}
+
 .btn-delete{
   bottom: auto;
   margin-bottom: 100px !important;
@@ -138,4 +154,8 @@ textarea{
 
 .card-details{
   margin: 50px;
+}
+
+.bg-img{
+  height: 100px;
 }

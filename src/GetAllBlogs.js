@@ -5,24 +5,15 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import img from './img.jpg';
-import React, { useState, useEffect} from "react";
 
-
- 
 const BlogList = ({ blogs, title, body  }) => {
-  const [visible, setVisible] = useState(4);
-
-  const showMore = () => {
-    setVisible(visible + 4);
-  }
- 
   
     return ( 
         <div className="blog-list">
-          <Container className="cards">
+          <Container>
           <Row> 
-          	{blogs.slice(0, visible).map((blog) => (
-                <Col md="12" lg="6">
+          	{blogs.map((blog) => (
+                <Col md="12" lg="6" xxl="3">
                 <div className='blog-preview' key={ blog.id }>
                   <Link to={`/blogs/${blog.id}`}> 
                     <Card className="card-style">
@@ -38,9 +29,8 @@ const BlogList = ({ blogs, title, body  }) => {
 
             ))}
             </Row>
-                <button onClick={showMore} className="button-loads">Load more</button>
-            
             </Container>
+
         </div>
      );
 }

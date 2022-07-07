@@ -47,7 +47,7 @@ const Create = () => {
                 </Form.Group>
                 <Form.Group controlId="formFile" className="mb-3 my-3">
                     <Form.Label>Default file input example</Form.Label>
-                    <Form.Control type="file" />
+                    <Form.Control type="file"  />
                 </Form.Group>
                 <Form.Group className="mb-3 my-3">
                     <Form.Label>Blog content</Form.Label> 

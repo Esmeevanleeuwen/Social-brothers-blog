@@ -1,16 +1,16 @@
 {
   "blogs": [
     {
-      "title": "bd",
-      "body": "bdbb",
-      "category": "Zakelijk",
-      "id": "gObvIfc"
+      "title": "Test blog",
+      "body": "Dit is text voor een blog\n",
+      "category": "Persoonlijk",
+      "id": 1
     },
     {
-      "title": "dkmd",
-      "body": "mdmmd",
+      "title": "Web developemont tips",
+      "body": "!0 tips om de mooiste site te maken ",
       "category": "Persoonlijk",
-      "id": "5FuJZP9"
+      "id": 2
     }
   ]
 }

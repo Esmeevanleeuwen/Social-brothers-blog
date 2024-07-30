@@ -1,0 +1,54 @@
+/* Create.css */
+.create {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .create form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .create input[type="text"],
+  .create textarea,
+  .create select {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .create button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e35d32;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create button:disabled {
+    background-color: #ccc;
+  }
+  

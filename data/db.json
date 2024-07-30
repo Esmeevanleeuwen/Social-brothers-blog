@@ -1,16 +1,25 @@
 {
   "blogs": [
     {
-      "title": "Test blog",
-      "body": "Dit is text voor een blog\n",
+      "id": "ac83",
+      "title": "Test",
+      "body": "Test",
       "category": "Persoonlijk",
-      "id": 1
+      "image": "https://waarnemingen.be/media/photo/64929190.jpg"
     },
     {
-      "title": "Web developemont tips",
-      "body": "!0 tips om de mooiste site te maken ",
+      "id": "ce65",
+      "title": "Test",
+      "body": "Test",
       "category": "Persoonlijk",
-      "id": 2
+      "image": "https://waarnemingen.be/media/photo/64929190.jpg"
+    },
+    {
+      "id": "74f9",
+      "title": "Test",
+      "body": "Test",
+      "category": "Persoonlijk",
+      "image": "https://waarnemingen.be/media/photo/64929190.jpg"
     }
   ]
 }
